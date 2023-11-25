@@ -1,5 +1,13 @@
+import Card from './Componentes/Card';
+
 export default function Home(){
     return(
-        <h1>PTAC 2 - PROJETO FINAL</h1>
-     );
+    <div className="container">
+        <Menu/>
+        <NavBar = nomeSite{"Indicações de Doramas"}/>
+        <div className="card-container">
+          <Cards listaTrailers = {listaTrailers}/>
+     </div>
+    </div>
+    );
 }
