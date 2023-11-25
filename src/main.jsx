@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom/client'
 import {Routes,Route,BrowserRouter} from "react-router-dom";
 import Home from './Home'
 import ToWach from './ToWatch/ToWatch.jsx'
-import Detalhe from './Detalhe/detalhe.jsx'
+import Detalhe from './Detalhe.jsx'
 
 //Renderização dos objetos JSX// 
 ReactDOM.createRoot(document.getElementById('root')).render(

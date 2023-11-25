@@ -13,6 +13,7 @@ return(
             frameborder = "0"
             allow = "accelerometer; autoplay; clipboard-write ; encrypted-media"   
         </iframe>
+        
         <Link to ={'/detalhe/$video.id'}>
             <span>
                 {video.nome}
