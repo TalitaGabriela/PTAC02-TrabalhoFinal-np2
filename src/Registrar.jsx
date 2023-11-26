@@ -1,26 +1,25 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
-import "./style.css";
+import "./style.css"; 
 
 export default function Registrar() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"));
     const [atividade, setAtividade] = useState("");
-    const [lista, setLista] = useState(listaLocalStorage || []);
+    const [listaTrailers, setListaTrailers] = useState(listaLocalStorage || []);
     const [id, setId] = useState(listaLocalStorage [listaLocalStorage.length - 1]?.id + 1||1);
     document.title = `Lista Dorama`
-
-    useEffect(() => {localStorage.setItem("Lista", JSON.stringify(lista));}, [lista]);
+    console.log(lista)
+    useEffect(() => {localStorage.setItem("Lista", JSON.stringify(listaTrailers));}, [listaTrailers]);
 
     const salvar = (e) => {
         e.preventDefault();
-        setLista([...lista, { atividade: atividade, id: id }]);
+        setListaTrailers([...listaTrailers, { atividade: atividade, id: id }]);
         setId(id + 1);
         setAtividade("");
     };
 
     const remover = (id) => {
-        setLista(lista.filter((ativ) => ativ.id !== id));
+        setListaTrailers(listaTrailers.filter((ativ) => ativ.id !== id));
     }
 
     return (
