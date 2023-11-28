@@ -1,5 +1,4 @@
 import NavBar from './Componentes/NavBar';
-import Card from './Componentes/Card';
 import { useState, useEffect } from "react";
 import "./style.css"; 
 export const listaTrailers=[];
@@ -27,8 +26,7 @@ export default function Registrar() {
                 <input type="text"
                     value={video}
                     onChange={(e) => { setVideo(e.target.value) }} />
-                <button>ADICIONAR</button>
-                <Card listaTrailers = {listaTrailers}/>     
+                <button>ADICIONAR</button>  
             </form >
         </div>
     );
