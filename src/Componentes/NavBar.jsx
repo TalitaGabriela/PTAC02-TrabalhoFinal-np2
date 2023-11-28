@@ -1,3 +1,5 @@
+import '../styles/navbar.css'
+
 export default function NavBar({nomeSite}){
     return(
         <nav className="navbar">
