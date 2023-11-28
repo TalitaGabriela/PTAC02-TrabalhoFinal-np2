@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Detalhe from '../Detalhe';
 import '../styles/card.css'
 
 export default function Card({listaTrailers}){

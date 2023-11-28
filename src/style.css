@@ -5,18 +5,16 @@ body {
     background-image:url(drama.jpg);
     color: white;
     border-color: black;
+    background-size:cover;
+    display:flex; 
+    flex-direction:column;
+    justify-content:center;
+    align-items:right;
   }
   
   Link {
     color: rgb(194, 59, 209);
     text-decoration: none;
-  }
-
-  .container {
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: #cd40e62f;
-    padding: 20px;
   }
   
   h1 {

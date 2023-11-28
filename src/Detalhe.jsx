@@ -5,16 +5,19 @@ export default function Detalhe(){
     const { id } = useParams();
     const lista = JSON.parse(localStorage.getItem("Lista"));
 
-    const atividade = lista.filter((objeto)=>{
+    const videos = lista.filter((objeto)=>{
     if(objeto.id == id){
     return objeto;
     }
     return null;
     });
 
-console.log(atividade[0]);
+console.log(videos[0]);
 
     return(
-    <Card atividade={atividade[0]}/>
+    <div>
+    <NavBar nomeSite={"INDICAÇÕES DE DORAMAS"} />
+    <Card videos={videos[0]}/>
+    </div>
     );
 }
