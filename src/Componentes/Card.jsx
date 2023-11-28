@@ -1,4 +1,3 @@
-import {listaTrailers} from '../Registrar'
 import { Link } from "react-router-dom";
 import '../styles/card.css'
 

@@ -1,6 +1,7 @@
 import NavBar from './Componentes/NavBar';
 import Menu from './Componentes/Menu';
 import Card from './Componentes/Card';
+import {listaTrailers} from './Registrar'
 
 export default function Home(){
     return(

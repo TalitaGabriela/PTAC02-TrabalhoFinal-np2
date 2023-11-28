@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./style.css"; 
+export const listaTrailers=[];
 
 export default function Registrar() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"));
