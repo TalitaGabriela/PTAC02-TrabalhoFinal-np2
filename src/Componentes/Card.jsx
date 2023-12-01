@@ -17,7 +17,13 @@ return(
 
         <Link to ={'/detalhe/$video.id'}>
             <span>
-                {video.nome}
+                {video.vdUrl}
+                {video.vdNome}
+                {video.vdDescricao}
+                {video.vdGenero}
+                {video.vdLancamento}
+                {video.vdEmissora}
+                <br/>
             </span>
         </Link>
     </div>
