@@ -5,7 +5,6 @@ export const listaTrailers=[];
 
 export default function Registrar() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"))|| [];
-    const [video, setVideo] = useState("");
     const [vdUrl, setVdUrl] = useState("");
     const [vdNome, setVdNome] = useState("");
     const [vdDescricao, setVdDescricao] = useState("");
@@ -19,15 +18,15 @@ export default function Registrar() {
 
     const salvar = (e) => {
         e.preventDefault();
-        setListaTrailers([...listaTrailers, { video: video, id: id }]);
+        setListaTrailers([...listaTrailers, { vdUrl: vdUrl, id: id,}]);
         setId(id + 1);
-        setVideo("");
+        setVdUrl("");
     };
 
     return (
     <div>
         <NavBar nomeSite={"INDICAÇÕES DE DORAMAS"}/>
-        <div className="container">
+        <div className="container-1">
         
             <h1>CADASTRE SEU TRAILER</h1>
             <br/>
