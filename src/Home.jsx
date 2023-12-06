@@ -5,7 +5,7 @@ import "./style.css";
 
 export default function Home(){
     return(
-    <div className="container">
+    <div>
         <NavBar nomeSite={"INDICAÇÕES DE DORAMAS"} />
         <div className="card-container">
           <Card listaTrailers = {listaTrailers}/>

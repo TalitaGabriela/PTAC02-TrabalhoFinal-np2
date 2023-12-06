@@ -17,7 +17,9 @@ console.log(videos[0]);
     return(
     <div>
     <NavBar nomeSite={"INDICAÇÕES DE DORAMAS"} />
+    <div>
     <Card videos={videos[0]}/>
+    </div>
     </div>
     );
 }
