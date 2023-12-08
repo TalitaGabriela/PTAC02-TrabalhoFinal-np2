@@ -4,9 +4,9 @@ import ReactDOM from 'react-dom/client'
 
 import {Routes,Route,BrowserRouter} from "react-router-dom";
 import Home from './Home';
-import Detalhe from './Detalhe.jsx';
-import Destaque from './Destaque.jsx';
-import Registrar from './Registrar.jsx';
+import Detalhe from './Detalhe';
+import Destaque from './Destaque';
+import Registrar from './Registrar';
 
 //Renderização dos objetos JSX// 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -20,5 +20,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/Destaque' element={<Destaque/>}></Route>
     </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 )

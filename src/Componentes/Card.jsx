@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Detalhe from '../Detalhe';
 import '../styles/card.css';
 
 export default function Card({ listaTrailers }) {
@@ -14,8 +13,8 @@ export default function Card({ listaTrailers }) {
     
                 <div className="card-header">
                     <iframe
-                        width="800"
-                        height="500"
+                        width="400"
+                        height="280"
                         src={`https://www.youtube.com/embed/${video.vdUrl.slice(17)}`}
                         title="Diva à Deriva | Trailer oficial | Netflix [PT SUB CC]"
                         frameBorder="0"

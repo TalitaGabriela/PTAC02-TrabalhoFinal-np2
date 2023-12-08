@@ -1,16 +1,15 @@
 import NavBar from './Componentes/NavBar';
 import Card from './Componentes/Card';
+import { listaTrailers } from './Registrar';
 
 export default function Destaque(){
-      const listaLocalStorage = JSON.parse(localStorage.getItem("Lista")).slice(-4)|| []
+      const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"))|| []
 
       return(
       <div>
           <NavBar nomeSite={"INDICAÇÕES DE DORAMAS"} />
           <div className="card-container">
-            {listaLocalStorage.slice(-4).map((video) =>
-            <Card video = {video}/>
-)}
+            <Card listaTrailers = {listaLocalStorage.slice(-4)}/>
        </div>
       </div>
     );
