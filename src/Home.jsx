@@ -1,6 +1,5 @@
 import NavBar from './Componentes/NavBar';
 import Card from './Componentes/Card';
-import {listaTrailers} from './Registrar'
 import "./style.css"; 
 
 export default function Home(){
