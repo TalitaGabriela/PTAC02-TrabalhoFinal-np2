@@ -25,17 +25,14 @@ export default function Card({ listaTrailers }) {
             </div>
             <div className="card-body">
             <h2 className="card-local">{video.vdNome}</h2>
-              <h3 className="card-titulo">{video.vdDescricao}</h3>
-              <h5 className="card-titulo">{video.vdGenero}</h5>
-              <h5 className="card-titulo">{video.vdLancamento}</h5>
-              <h5 className="card-titulo">{video.vdEmissora}</h5>
-              <div className="card-footer">
-              <Link to={`/detalhe/${video.id}`}>
-                    <button className="card-button" style={{ color: 'black', borderColor: 'black' }}>VER DETALHES</button>
+            <div className="card-footer"></div>
+            <Link to={`/detalhe/${video.id}`}>
+            <button className="card-button">
+                    VER DETALHES 
+            </button>
               </Link>
-              </div>
-            </div>
-          </div>
+             </div>
+           </div>
         </div>
     ))
   );
