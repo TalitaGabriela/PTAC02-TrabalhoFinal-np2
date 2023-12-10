@@ -6,21 +6,18 @@ export default function Detalhe(){
     const { id } = useParams();
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"));
 
-    const listaTrailers = listaLocalStorage.filter((objeto)=>{
-    if(objeto.id == id){
-    return objeto;
-    }
-    return null;
+    const listaTrailers = listaLocalStorage.filter((objeto) => {
+        return objeto.id == id;
     });
 
-console.log(listaTrailers[0]);
+    console.log(listaTrailers[0]);
 
-    return(
+    return (
         <div>
-        <NavBar nomeSite={"INDICAÇÕES DE DORAMAS"} />
-        <div className="card-container">
-          <Card listaTrailers = {listaLocalStorage[0]}/>
-     </div>
-    </div>
+            <NavBar nomeSite={"INDICAÇÕES DE DORAMAS"} />
+            <div className="card-container">
+                <Card listaTrailers={listaTrailers} />
+            </div>
+        </div>
     );
 }
