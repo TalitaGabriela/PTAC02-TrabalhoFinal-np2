@@ -2,9 +2,11 @@
 
 body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-image:url(drama.jpg);
+  background-image:url(../public/drama.jpg);
   color: white;
   border-color: black;
+  margin: 0;
+  width: 100%;
 }
 
 Link {

@@ -5,12 +5,13 @@ body {
   
   .menu {
     display: flex;
+    flex-wrap: wrap;
   }
   
   .menu a {
     color: white;
     text-decoration: none;
-    margin-right: 10px;
+    margin-left: 10px;
   }
   
   .menu a:hover {
