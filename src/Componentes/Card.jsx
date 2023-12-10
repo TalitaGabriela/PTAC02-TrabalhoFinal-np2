@@ -18,6 +18,7 @@ export default function Card({ listaTrailers }) {
                 allowFullScreen
               ></iframe>
             </div>
+            
             <div className="card-body">
               <h2 className="card-local">{video.vdNome}</h2>
               <div className="card-footer"></div>
