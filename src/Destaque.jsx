@@ -1,6 +1,5 @@
 import NavBar from './Componentes/NavBar';
 import Card from './Componentes/Card';
-import { listaTrailers } from './Registrar';
 
 export default function Destaque(){
       const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"))|| []

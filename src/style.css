@@ -2,7 +2,7 @@
 
 body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-image:url(../public/drama.jpg);
+  background-image:url(/drama.jpg);
   color: white;
   border-color: black;
   margin: 0;
