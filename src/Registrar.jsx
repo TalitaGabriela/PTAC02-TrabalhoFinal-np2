@@ -17,7 +17,15 @@ export default function Registrar() {
 
     const salvar = (e) => {
         e.preventDefault();
-        setListaTrailers([...listaTrailers, { vdUrl: vdUrl, id: id,}]);
+        setListaTrailers([...listaTrailers, { 
+            vdUrl: vdUrl, 
+            vdNome:vdNome, 
+            vdDescricao :vdDescricao, 
+            vdGenero:vdGenero, 
+            vdLancamento:vdLancamento,
+            vdEmissora:vdEmissora,
+            id: id}]);
+            
         setId(id + 1);
         setVdUrl("");
     };

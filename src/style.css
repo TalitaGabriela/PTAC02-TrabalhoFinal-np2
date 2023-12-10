@@ -3,10 +3,14 @@
 body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   background-image:url(/drama.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
   color: white;
   border-color: black;
   margin: 0;
   width: 100%;
+  
 }
 
 Link {

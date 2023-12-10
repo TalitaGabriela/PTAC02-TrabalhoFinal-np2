@@ -21,7 +21,7 @@ export default function Card({ listaTrailers }) {
             <div className="card-body">
               <h2 className="card-local">{video.vdNome}</h2>
               <div className="card-footer"></div>
-              <Link to={`/detalhe/${video.id}`}>
+              <Link to={`/Detalhe/${video.id}`}>
                 <button className="card-button">
                   VER DETALHES
                 </button>
