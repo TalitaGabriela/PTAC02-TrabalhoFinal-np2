@@ -7,7 +7,7 @@ export default function Home(){
 
     return(
     <div>
-        <NavBar nomeSite={"INDICAÇÕES DE DORAMAS"} />
+        <NavBar nomeSite={"Mundo KDRAMAS"} />
         <div className="card-container">
           <Card listaTrailers = {listaLocalStorage}/>
      </div>

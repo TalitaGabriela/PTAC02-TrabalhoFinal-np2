@@ -16,7 +16,7 @@ export default function Detalhe(){
     return (
         listaTrailers.map((video) => (
         <div>
-            <NavBar nomeSite={"INDICAÇÕES DE DORAMAS"} />
+            <NavBar nomeSite={"Mundo KDRAMAS"} />
             <div className="container-1">
             <Card listaTrailers={listaTrailers} />
                 <p>{video.vdDescricao}</p>

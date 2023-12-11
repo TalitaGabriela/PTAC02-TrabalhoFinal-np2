@@ -6,7 +6,7 @@ export default function Destaque(){
 
       return(
       <div>
-          <NavBar nomeSite={"INDICAÇÕES DE DORAMAS"} />
+          <NavBar nomeSite={"Mundo KDRAMAS"} />
           <div className="card-container">
             <Card listaTrailers = {listaLocalStorage.slice(-4)}/>
        </div>

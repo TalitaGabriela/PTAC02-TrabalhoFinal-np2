@@ -32,7 +32,7 @@ export default function Registrar() {
 
     return (
     <div>
-        <NavBar nomeSite={"INDICAÇÕES DE DORAMAS"}/>
+        <NavBar nomeSite={"Mundo KDRAMAS"} />
         <div className="container-1">
         
             <h1>CADASTRE SEU TRAILER</h1>
